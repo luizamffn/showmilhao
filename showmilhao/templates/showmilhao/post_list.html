@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Show do milhão</title>
+    </head>
+    <body>
+        <h1>Show do milhão</h1>
+
+        {% for q in questoes  %}
+            <div>
+                <p>{{ q.pergunta }}</p>
+                <p>A - {{ q.a }}</p>
+                <p>B - {{ q.b }}</p>
+                <p>C - {{ q.c }}</p>
+                <p>D - {{ q.d }}</p>
+            </div>
+        {% endfor %}
+
+    </body>
+</html>
